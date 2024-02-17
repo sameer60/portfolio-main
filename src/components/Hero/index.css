@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.hero-name{
+    text-transform: lowercase;
+    background: linear-gradient(to right, #8202fa, #ce03fc,#0ab0f2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 3s linear infinite;
+    background-size: 200% auto;
+}
+@keyframes textclip {
+    to {
+      background-position: -200% center;
+    }
+}

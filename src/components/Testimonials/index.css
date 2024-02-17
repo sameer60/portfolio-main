@@ -1,0 +1,26 @@
+.glass-card{
+    background: rgba(82, 228, 220, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    border: 1px solid rgba(82, 228, 220, 0.61);
+}
+.fire-stick{
+    position: absolute;
+    top: 140px;
+    background-color: rgb(165, 77, 42);
+    height: 120px;
+    width: 20px;
+    border-radius: 10px;
+    transform: rotate(70deg);
+}
+.fire-stick-two{
+    position: absolute;
+    top: 140px;
+    background-color: rgb(165, 77, 42);
+    height: 120px;
+    width: 20px;
+    border-radius: 10px;
+    transform: rotate(-70deg);
+}

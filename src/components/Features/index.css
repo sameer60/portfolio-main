@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hero-name{
+    text-transform: lowercase;
+    background: linear-gradient(to right, #8202fa, #ce03fc,#0ab0f2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 3s linear infinite;
+    background-size: 200% auto;
+}
+@keyframes textclip {
+    to {
+      background-position: -200% center;
+    }
+}
+.feature-icon-container{
+  top: -30px;
+  left: 60px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f4fbff, #cdd4dd);
+  box-shadow:  6px 6px 12px #c2c8d0,
+           -6px -6px 12px #ffffff;
+}
