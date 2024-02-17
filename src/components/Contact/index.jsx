@@ -88,7 +88,7 @@ const Contact = () => {
               Send message
             </button>
           </form>
-          <div className="lg:w-1/2 md:w-1/2 rounded-lg overflow-hidden sm:ml-10 flex flex-col justify-center items-center relative">
+          <div className="lg:w-1/2 md:w-1/2 w-full rounded-lg overflow-hidden sm:ml-10 flex flex-col justify-center items-center relative">
             <h2 className="text-gray-900 text-4xl mb-4 font-medium tracking-tight title-font">
               Let's talk
             </h2>

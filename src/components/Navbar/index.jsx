@@ -19,10 +19,10 @@ const Navbar = () => {
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <a className="mr-5 text-gray-600 font-semibold text-lg cursor-pointer hover:text-gray-900">
-            About
+            Uses
           </a>
           <a className="mr-5 text-gray-600 font-semibold text-lg cursor-pointer hover:text-gray-900">
-            Contact
+            Resources
           </a>
         </nav>
       </div>
