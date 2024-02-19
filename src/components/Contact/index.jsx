@@ -1,10 +1,14 @@
 import Lottie from "lottie-react";
 import emailjs from "@emailjs/browser";
 import emailLottie from "../../assets/emailLottie.json";
+import toast, { Toaster } from "react-hot-toast";
 import { useRef } from "react";
 import "./index.css";
 
 const Contact = () => {
+  const handleSendMessage = (notify) => {
+    notify();
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -20,6 +24,14 @@ const Contact = () => {
       .then(
         // eslint-disable-next-line no-unused-vars
         (result) => {
+          handleSendMessage(() =>
+            toast.success("Message Sent !", {
+              style: {
+                padding: "10px 16px",
+                borderRadius: "10px",
+              },
+            })
+          );
           form.current.reset();
         },
         (error) => {
@@ -47,6 +59,7 @@ const Contact = () => {
               <input
                 required
                 type="text"
+                placeholder="Elon Musk"
                 id="name"
                 name="name"
                 className="w-full rounded-xl border-2 border-gray-400 focus:border-[#60f5eb] focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out bg-transparent"
@@ -62,6 +75,7 @@ const Contact = () => {
               <input
                 required
                 type="email"
+                placeholder="elonmusk@example.com"
                 id="email"
                 name="email"
                 className="w-full bg-white rounded-xl border-2 border-gray-400 focus:border-[#60f5eb] focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out bg-transparent"
@@ -77,12 +91,14 @@ const Contact = () => {
               <textarea
                 required
                 id="message"
+                placeholder="Hi Sameer, I'm eager to discuss the project we're currently engaged in..."
                 name="message"
-                className="w-full bg-white rounded-xl border-2 border-gray-400 focus:border-[#60f5eb] focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out bg-transparent"
+                className="w-full bg-white rounded-xl border-2 border-gray-400 focus:border-[#60f5eb] focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-3 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out bg-transparent"
               ></textarea>
             </div>
             <button
               type="submit"
+              onClick={handleSendMessage}
               className="text-white font-bold bg-[#111827] border-0 py-3 px-7 focus:outline-none hover:bg-[#2c3548] rounded-xl text-lg"
             >
               Send message
@@ -101,6 +117,7 @@ const Contact = () => {
             />
           </div>
         </div>
+        <Toaster />
       </section>
     </>
   );
