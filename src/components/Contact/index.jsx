@@ -44,7 +44,7 @@ const Contact = () => {
     <>
       <section
         id="contact"
-        className="text-gray-600 body-font relative bg-[#7af6ee]"
+        className="text-gray-600 body-font relative bg-[#7af6ee] contact-section"
       >
         <div className="container px-5 py-24 mx-auto flex md:flex-nowrap flex-wrap-reverse">
           <form

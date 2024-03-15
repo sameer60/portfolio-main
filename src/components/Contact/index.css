@@ -1,4 +1,3 @@
-.contact-container{
-    background-image: linear-gradient(to right top, #abfdff, #b9fdff, #c7fdff, #d4fdff, #e0fdff);
-    background-size: cover;
+.contact-section{
+    background-image: linear-gradient(to bottom right, #4ddbc1, #91f6ec);
 }

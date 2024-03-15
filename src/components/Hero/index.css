@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 .hero-name{
     text-transform: lowercase;
-    background: linear-gradient(to right, #8202fa, #ce03fc,#0ab0f2);
+    background: linear-gradient(to right, #b5d1ae,#444847);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: textclip 3s linear infinite;
-    background-size: 200% auto;
 }
-@keyframes textclip {
-    to {
-      background-position: -200% center;
-    }
+.get-in-touch {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  box-shadow: 0.25rem 0.25rem #121212;
+  padding: 0.75rem 1rem;
+  transition: transform 50ms, box-shadow 50ms;
+  color: black;
+}
+.get-in-touch:active{
+  transform: translate(0.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
 }

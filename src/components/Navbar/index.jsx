@@ -1,7 +1,7 @@
 import { FaCode } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <header className="text-gray-600 body-font bg-[#e4ebf5]">
+    <header className="text-gray-600 body-font bg-[#e4edea]">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <FaCode className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" />
