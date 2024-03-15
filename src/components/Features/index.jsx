@@ -5,7 +5,7 @@ const Features = () => {
       <section className="text-gray-600 body-font bg-[#f1eafe]">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center mt-40 w-full mb-20">
-            <h2 className="text-4xl text-black tracking-tight font-medium title-font mb-1 font-[Josefin Sans]">
+            <h2 className="text-4xl text-[#000] tracking-tight font-medium title-font mb-1 font-[Bungee] features-section-heading">
               A FRONTEND 😄 DEVELOPER WITH A{" "}
               <span className="font-bold">DESIGN SENSE</span>.
             </h2>

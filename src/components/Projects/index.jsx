@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 const Projects = () => {
   return (
     <>
@@ -10,7 +11,10 @@ const Projects = () => {
             </h1>
           </div>
           <div className="-m-4 flex flex-wrap">
-            <div className="p-4 md:w-1/2">
+            <div
+              onClick={() => Swal.fire("Coming Soon...")}
+              className="p-4 md:w-1/2"
+            >
               <div className="h-full overflow-hidden shadow-xl hover:-translate-y-1 transition cursor-pointer rounded-lg border-2 border-gray-200 border-opacity-60">
                 <div className="p-6">
                   <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
@@ -28,7 +32,10 @@ const Projects = () => {
                 />
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div
+              onClick={() => Swal.fire("Coming Soon...")}
+              className="p-4 md:w-1/2"
+            >
               <div className="h-full overflow-hidden shadow-xl hover:-translate-y-1 transition cursor-pointer rounded-lg border-2 border-gray-200 border-opacity-60">
                 <div className="p-6">
                   <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
