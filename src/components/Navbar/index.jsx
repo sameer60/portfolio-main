@@ -22,6 +22,13 @@ const Navbar = () => {
           >
             Resources
           </a>
+          <a
+            href="/public/resume.pdf "
+            download
+            className="mr-5 text-gray-600 font-semibold text-lg cursor-pointer hover:text-gray-900"
+          >
+            Resume
+          </a>
         </nav>
       </div>
     </header>
